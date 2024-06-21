@@ -13,11 +13,11 @@ import java.util.Date;
 @TableName(value = "appraise")
 public class Appraise {
     @TableId(type = IdType.AUTO)
-    private int id;
-    private int items_id;
-    private int user_id;
+    private Integer id;
+    private int itemsId;
+    private int userId;
     private String text;
-    private String img;
+    private String image;
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
     private Date createTime;

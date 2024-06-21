@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 public class Items {
     @TableId(type = IdType.AUTO)
-    private int id;
+    private Integer id;
     private String name;
     private double price;
     private String type;

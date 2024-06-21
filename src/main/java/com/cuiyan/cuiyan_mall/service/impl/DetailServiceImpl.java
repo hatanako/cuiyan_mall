@@ -1,6 +1,5 @@
 package com.cuiyan.cuiyan_mall.service.impl;
 
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cuiyan.cuiyan_mall.entity.Detail;
 import com.cuiyan.cuiyan_mall.entity.vo.ItemsVo;
 import com.cuiyan.cuiyan_mall.mapper.DetailMapper;

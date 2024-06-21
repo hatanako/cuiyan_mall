@@ -2,9 +2,7 @@ package com.cuiyan.cuiyan_mall.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cuiyan.cuiyan_mall.entity.Appraise;
-import com.cuiyan.cuiyan_mall.entity.Postcom;
 import com.cuiyan.cuiyan_mall.mapper.AppraiseMapper;
-import com.cuiyan.cuiyan_mall.mapper.PostComMapper;
 import com.cuiyan.cuiyan_mall.service.AppraiseService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

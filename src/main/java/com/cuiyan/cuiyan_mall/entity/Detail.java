@@ -13,8 +13,8 @@ import java.util.Date;
 @TableName(value = "detail")
 public class Detail {
     @TableId(type = IdType.AUTO)
-    private int id;
-    private int items_id;
+    private Integer id;
+    private int itemsId;
     private int num;
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")

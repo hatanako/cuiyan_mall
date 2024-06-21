@@ -1,7 +1,6 @@
 package com.cuiyan.cuiyan_mall.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.cuiyan.cuiyan_mall.entity.Items;
 import com.cuiyan.cuiyan_mall.entity.Post;
 
 import java.util.List;

@@ -1,20 +1,19 @@
 package com.cuiyan.cuiyan_mall.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.cuiyan.cuiyan_mall.entity.Post;
 import com.cuiyan.cuiyan_mall.entity.Postcom;
-import com.cuiyan.cuiyan_mall.mapper.PostComMapper;
-import com.cuiyan.cuiyan_mall.mapper.PostMapper;
-import com.cuiyan.cuiyan_mall.service.PostComService;
+import com.cuiyan.cuiyan_mall.entity.vo.PostcomVo;
+import com.cuiyan.cuiyan_mall.mapper.PostcomMapper;
+import com.cuiyan.cuiyan_mall.service.PostcomService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 @Service
-public class PostComServiceImpl implements PostComService {
+public class PostcomServiceImpl implements PostcomService {
 
     @Autowired
-    private PostComMapper mapper;
+    private PostcomMapper mapper;
 
 
     @Override
@@ -40,5 +39,10 @@ public class PostComServiceImpl implements PostComService {
     @Override
     public int updateById(Postcom postcom) {
         return mapper.updateById(postcom);
+    }
+
+    @Override
+    public List<PostcomVo> selectUserWithPostcom(int id) {
+        return mapper.selectUserWithPostcom(id);
     }
 }

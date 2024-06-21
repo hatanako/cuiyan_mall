@@ -46,6 +46,11 @@ public class DetailController {
     }
     @RequestMapping("/delete")
     public ResultMessage deleteBatch(@RequestBody List<Detail> details){
+        int i = service.deleteBatch(details);
+        if (i==0)
+            resultMessage.success("500","删除失败");
+        else
+            resultMessage.success("200","删除成功");
         return resultMessage;
     }
 

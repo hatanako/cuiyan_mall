@@ -1,10 +1,8 @@
 package com.cuiyan.cuiyan_mall.service;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cuiyan.cuiyan_mall.entity.User;
 
-import javax.jws.soap.SOAPBinding;
 import java.util.List;
 
 /**

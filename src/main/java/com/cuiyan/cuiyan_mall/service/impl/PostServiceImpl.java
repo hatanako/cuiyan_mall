@@ -1,9 +1,7 @@
 package com.cuiyan.cuiyan_mall.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.cuiyan.cuiyan_mall.entity.Items;
 import com.cuiyan.cuiyan_mall.entity.Post;
-import com.cuiyan.cuiyan_mall.mapper.ItemsMapper;
 import com.cuiyan.cuiyan_mall.mapper.PostMapper;
 import com.cuiyan.cuiyan_mall.service.PostService;
 import org.springframework.beans.factory.annotation.Autowired;

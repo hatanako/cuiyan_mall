@@ -13,8 +13,8 @@ import java.util.Date;
 @TableName(value = "post")
 public class Post {
     @TableId(type = IdType.AUTO)
-    private int id;
-    private int user_id;
+    private Integer id;
+    private int userId;
     private String text;
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")

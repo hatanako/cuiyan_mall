@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.cuiyan.cuiyan_mall.mapper.PostcomMapper">
+    <select id="selectUserWithPostcom" resultType="com.cuiyan.cuiyan_mall.entity.vo.PostcomVo" parameterType="int">
+        select user.name username,postcom.* from user,postcom
+        where user.id = postcom.user_id and postcom.id = #{id}
+    </select>
+</mapper>
+
+

@@ -3,7 +3,6 @@ package com.cuiyan.cuiyan_mall.entity;
 import com.baomidou.mybatisplus.annotation.*;
 import com.fasterxml.jackson.annotation.JsonFormat;
 import lombok.Data;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -14,9 +13,10 @@ import java.util.Date;
 @TableName(value = "postcom")
 public class Postcom {
     @TableId(type = IdType.AUTO)
-    private int id;
-    private int user_id;
-    private int reply;
+    private Integer id;
+    private Integer userId;
+    private Integer postId;
+    private String reply;
 
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")

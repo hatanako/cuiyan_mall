@@ -13,9 +13,9 @@ import java.util.Date;
 @TableName(value = "order")
 public class Order {
     @TableId(type = IdType.AUTO)
-    private int id;
-    private int detail_id;
-    private int user_id;
+    private Integer id;
+    private Integer detailId;
+    private Integer userId;
     private String pay;
     @TableField(fill = FieldFill.INSERT)
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")

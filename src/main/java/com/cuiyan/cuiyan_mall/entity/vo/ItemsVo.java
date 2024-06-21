@@ -12,7 +12,7 @@ import java.util.Date;
 @Data
 public class ItemsVo extends Items{
     private String username;
-    private int oid;
+    private Integer oid;
     private int num;
     @JsonFormat(timezone = "GMT+8",pattern = "yyyy-MM-dd HH:mm:ss")
     private Date ocTime;
