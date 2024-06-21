@@ -20,7 +20,7 @@ import java.util.List;
 public class ItemsController {
     @Resource
     private ItemsMapper mapper;
-    @Autowired
+    @Resource
     private ResultMessage resultMessage;
     @RequestMapping("/add")
     public ResultMessage add(@RequestBody Items items){

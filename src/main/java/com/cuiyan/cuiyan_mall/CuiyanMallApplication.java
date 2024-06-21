@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-@MapperScan("com.cuiyan.cuiyan_mall")
+@MapperScan("com.cuiyan.cuiyan_mall.mapper")
 public class CuiyanMallApplication {
 
 	public static void main(String[] args) {

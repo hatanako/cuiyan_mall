@@ -4,7 +4,6 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cuiyan.cuiyan_mall.entity.User;
 import com.cuiyan.cuiyan_mall.mapper.UserMapper;
 import com.cuiyan.cuiyan_mall.util.ResultMessage;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -17,7 +16,7 @@ import java.util.List;
 public class UserController {
     @Resource
     private UserMapper mapper;
-    @Autowired
+    @Resource
     private ResultMessage resultMessage;
 
     @RequestMapping("/list")

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cuiyan.cuiyan_mall.mapper.DetailMapper">
+    <select id="selectDetailItems" resultType="com.cuiyan.cuiyan_mall.entity.vo.ItemsVo" parameterType="int">
+        select items.*,user.name username,
+               order.id oid,order.create_time oc_time,order.update_time ou_time,detail.num
+        from items,`user`,`order`,detail
+        where items.id=detail.items_id
+          and `order`.detail_id =detail.id
+          and `user`.id = `order`.user_id
+          and `order`.id=#{id}
+    </select>
+</mapper>
